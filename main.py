@@ -1,6 +1,7 @@
 from email.policy import default
 import json
 import random
+import tkinter as tk
 
 file = open("words.json", "r", encoding="utf8")
 jsonObj = file.read()
@@ -28,6 +29,8 @@ LETTERS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 DIRECTIONS = [1, 2, 3, 4, 5, 6, 7, 8]
 
 marked = []
+
+r = random.SystemRandom()
 
 
 def tablePrint():
@@ -231,13 +234,10 @@ def checkNW(wlen, i, j):
         return False
 
 
-r = random.SystemRandom()
-for i in range(len(TABLE)):
-    for j in range(len(TABLE[i])):
-        TABLE[i][j] = str.upper(LETTERS[r.randint(0, len(LETTERS)-1)])
-
-
 def main():
+    for i in range(len(TABLE)):
+        for j in range(len(TABLE[i])):
+            TABLE[i][j] = str.upper(LETTERS[r.randint(0, len(LETTERS)-1)])
     i = 1
     while i <= 10:
         rword = str.upper(CROSSWORD[r.randint(0, len(CROSSWORD)-1)])
@@ -249,3 +249,19 @@ def main():
         print(rword, ri, rj, i)
         i = i + 1
     tablePrint()
+
+
+main()
+m = tk.Tk()
+for i in range(len(TABLE)):
+    for j in range(len(TABLE[i])):
+        frame = tk.Frame(
+            master=m,
+            relief=tk.RAISED,
+            borderwidth=1
+        )
+        frame.grid(row=i, column=j)
+        label = tk.Label(
+            master=frame, text=TABLE[i][j], width=7, height=3)
+        label.pack()
+m.mainloop()
