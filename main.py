@@ -7,12 +7,12 @@ import random
 import tkinter as tk
 
 if not os.path.exists("words.json"):
-    url =  "https://raw.githubusercontent.com/HyperHarsho/Crosswords/master/words.json"
+    url = "https://raw.githubusercontent.com/HyperHarsho/Crosswords/master/words.json"
     directory = getcwd()
     filename = directory+"/words.json"
     r = requests.get(url)
-    
-    f = open(filename,"x")
+
+    f = open(filename, "x")
     f.write(r.content.decode())
 
 file = open("words.json", "r", encoding="utf8")
@@ -21,6 +21,8 @@ word = json.loads(jsonObj)
 file.close()
 
 CROSSWORD = []
+
+words = []
 
 for w in word:
     CROSSWORD.append(w)
@@ -68,7 +70,6 @@ def addWord(word, wlen, i, j):
                 for w in word:
                     TABLE[i][j] = w
                     i = i - 1
-                print(1)
                 return True
             else:
                 return False
@@ -78,7 +79,6 @@ def addWord(word, wlen, i, j):
                     TABLE[i][j] = w
                     i = i - 1
                     j = j + 1
-                print(2)
                 return True
             else:
                 return False
@@ -87,7 +87,6 @@ def addWord(word, wlen, i, j):
                 for w in word:
                     TABLE[i][j] = w
                     j = j + 1
-                print(3)
                 return True
             else:
                 return False
@@ -97,7 +96,6 @@ def addWord(word, wlen, i, j):
                     TABLE[i][j] = w
                     i = i + 1
                     j = j + 1
-                print(4)
                 return True
             else:
                 return False
@@ -106,7 +104,6 @@ def addWord(word, wlen, i, j):
                 for w in word:
                     TABLE[i][j] = w
                     i = i + 1
-                print(5)
                 return True
             else:
                 return False
@@ -116,7 +113,6 @@ def addWord(word, wlen, i, j):
                     TABLE[i][j] = w
                     i = i + 1
                     j = j - 1
-                print(6)
                 return True
             else:
                 return False
@@ -125,7 +121,6 @@ def addWord(word, wlen, i, j):
                 for w in word:
                     TABLE[i][j] = w
                     j = j - 1
-                print(7)
                 return True
             else:
                 return False
@@ -135,7 +130,6 @@ def addWord(word, wlen, i, j):
                     TABLE[i][j] = w
                     i = i - 1
                     j = j - 1
-                print(8)
                 return True
             else:
                 return False
@@ -259,12 +253,29 @@ def main():
         rj = r.randint(0, 9)
         if(addWord(rword, length, ri, rj) == False):
             continue
-        print(rword, ri, rj, i)
+        words.append(rword)
         i = i + 1
     tablePrint()
+    with open("table.txt", "w") as f:
+        pass
+    file = open("table.txt", "a")
+    file.write("Words-\n")
+    for x in words:
+        file.write(x+"\n")
+    file.write("Table-\n")
+    for i in range(len(TABLE)):
+        for j in range(len(TABLE[i])):
+            file.write(TABLE[i][j]+"\t")
+        file.write("\n")
+    file.write("Array-\n{")
+    for i in range(len(TABLE)):
+        for j in range(len(TABLE[i])):
+            file.write("\""+TABLE[i][j]+"\",")
+    file.write("}")
 
 
 main()
+
 m = tk.Tk()
 m.title("CrossWord")
 for i in range(len(TABLE)):
