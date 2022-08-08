@@ -18,6 +18,7 @@ if not os.path.exists("words.json"):
 file = open("words.json", "r", encoding="utf8")
 jsonObj = file.read()
 word = json.loads(jsonObj)
+file.close()
 
 CROSSWORD = []
 
