@@ -1,6 +1,19 @@
+from fileinput import filename
+import os.path
+import requests
+from os import getcwd
 import json
 import random
 import tkinter as tk
+
+if not os.path.exists("words.json"):
+    url =  "https://raw.githubusercontent.com/HyperHarsho/Crosswords/master/words.json"
+    directory = getcwd()
+    filename = directory+"/words.json"
+    r = requests.get(url)
+    
+    f = open(filename,"x")
+    f.write(r.content.decode())
 
 file = open("words.json", "r", encoding="utf8")
 jsonObj = file.read()
