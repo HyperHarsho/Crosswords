@@ -253,6 +253,7 @@ def main():
 
 main()
 m = tk.Tk()
+m.title("CrossWord")
 for i in range(len(TABLE)):
     for j in range(len(TABLE[i])):
         frame = tk.Frame(
