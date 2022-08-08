@@ -290,8 +290,8 @@ for i in range(len(TABLE)):
             master=frame, text=TABLE[i][j], width=7, height=3)
         label.pack()
 for i in range(len(words)):
-    frame = tk.Frame(master=m,relief=tk.RAISED,borderwidth=1)
-    frame.grid(row=i,column=11)
-    label = tk.Label(master=frame,text=words[i],width=10,height=3)
+    frame = tk.Frame(master=m, relief=tk.RAISED, borderwidth=1)
+    frame.grid(row=i, column=11)
+    label = tk.Label(master=frame, text=words[i], width=10, height=3)
     label.pack()
 m.mainloop()
