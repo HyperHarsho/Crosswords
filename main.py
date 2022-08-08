@@ -1,5 +1,8 @@
+from distutils.cmd import Command
 from fileinput import filename
 import os.path
+import this
+from tkinter.font import NORMAL
 import requests
 from os import getcwd
 import json
@@ -275,9 +278,9 @@ def main():
 
 
 main()
-
 m = tk.Tk()
 m.title("CrossWord")
+
 for i in range(len(TABLE)):
     for j in range(len(TABLE[i])):
         frame = tk.Frame(
@@ -289,9 +292,11 @@ for i in range(len(TABLE)):
         label = tk.Label(
             master=frame, text=TABLE[i][j], width=7, height=3)
         label.pack()
+
 for i in range(len(words)):
     frame = tk.Frame(master=m, relief=tk.RAISED, borderwidth=1)
     frame.grid(row=i, column=11)
     label = tk.Label(master=frame, text=words[i], width=10, height=3)
     label.pack()
+
 m.mainloop()

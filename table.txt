@@ -1,0 +1,24 @@
+Words-
+HELIX
+LIBBY
+SAAME
+ABED
+REAL
+CHUM
+HAWK
+JIMP
+KANS
+HERB
+Table-
+J	I	M	P	A	F	U	O	H	D	
+J	M	U	E	D	Q	Z	B	A	G	
+J	V	L	E	E	T	G	K	V	P	
+F	R	A	X	B	H	W	S	A	F	
+G	X	E	U	A	A	P	I	C	A	
+V	I	R	X	H	W	M	Q	H	A	
+M	Y	B	B	I	L	T	C	U	G	
+B	P	H	H	E	L	I	X	M	L	
+L	L	L	K	A	N	S	Z	M	K	
+S	A	A	M	E	B	R	E	H	I	
+Array-
+{"J","I","M","P","A","F","U","O","H","D","J","M","U","E","D","Q","Z","B","A","G","J","V","L","E","E","T","G","K","V","P","F","R","A","X","B","H","W","S","A","F","G","X","E","U","A","A","P","I","C","A","V","I","R","X","H","W","M","Q","H","A","M","Y","B","B","I","L","T","C","U","G","B","P","H","H","E","L","I","X","M","L","L","L","L","K","A","N","S","Z","M","K","S","A","A","M","E","B","R","E","H","I",}
