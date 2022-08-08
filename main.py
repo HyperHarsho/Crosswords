@@ -1,7 +1,5 @@
-from distutils.cmd import Command
 from fileinput import filename
 import os.path
-import this
 from tkinter.font import NORMAL
 import requests
 from os import getcwd
