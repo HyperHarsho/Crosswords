@@ -279,7 +279,7 @@ main()
 
 m = tk.Tk()
 m.title("CrossWord")
-
+m.wm_resizable(False,False)
 for i in range(len(TABLE)):
     for j in range(len(TABLE[i])):
         frame = tk.Frame(

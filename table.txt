@@ -1,24 +1,24 @@
 Words-
-HELIX
-LIBBY
-SAAME
-ABED
-REAL
-CHUM
-HAWK
-JIMP
-KANS
-HERB
+SYLL
+BAGS
+SENZA
+AWNER
+DEFT
+SKINK
+POOKA
+ADAT
+ESME
+MEAT
 Table-
-J	I	M	P	A	F	U	O	H	D	
-J	M	U	E	D	Q	Z	B	A	G	
-J	V	L	E	E	T	G	K	V	P	
-F	R	A	X	B	H	W	S	A	F	
-G	X	E	U	A	A	P	I	C	A	
-V	I	R	X	H	W	M	Q	H	A	
-M	Y	B	B	I	L	T	C	U	G	
-B	P	H	H	E	L	I	X	M	L	
-L	L	L	K	A	N	S	Z	M	K	
-S	A	A	M	E	B	R	E	H	I	
+Y	A	V	S	B	G	P	S	B	E	
+E	P	D	F	R	F	O	G	R	T	
+I	S	H	A	A	O	O	P	W	A	
+E	W	M	Z	T	C	K	E	L	E	
+M	A	N	E	R	V	A	B	L	M	
+V	E	U	C	E	M	S	A	Y	K	
+S	A	W	N	N	E	Z	G	S	N	
+N	R	C	R	W	M	U	S	G	I	
+B	Y	H	P	A	K	T	E	N	K	
+R	T	F	E	D	N	Z	Z	Z	S	
 Array-
-{"J","I","M","P","A","F","U","O","H","D","J","M","U","E","D","Q","Z","B","A","G","J","V","L","E","E","T","G","K","V","P","F","R","A","X","B","H","W","S","A","F","G","X","E","U","A","A","P","I","C","A","V","I","R","X","H","W","M","Q","H","A","M","Y","B","B","I","L","T","C","U","G","B","P","H","H","E","L","I","X","M","L","L","L","L","K","A","N","S","Z","M","K","S","A","A","M","E","B","R","E","H","I",}
+{"Y","A","V","S","B","G","P","S","B","E","E","P","D","F","R","F","O","G","R","T","I","S","H","A","A","O","O","P","W","A","E","W","M","Z","T","C","K","E","L","E","M","A","N","E","R","V","A","B","L","M","V","E","U","C","E","M","S","A","Y","K","S","A","W","N","N","E","Z","G","S","N","N","R","C","R","W","M","U","S","G","I","B","Y","H","P","A","K","T","E","N","K","R","T","F","E","D","N","Z","Z","Z","S",}
