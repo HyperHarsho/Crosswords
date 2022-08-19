@@ -1,24 +1,24 @@
 Words-
-SYLL
-BAGS
-SENZA
-AWNER
-DEFT
-SKINK
-POOKA
-ADAT
-ESME
-MEAT
+DUOS
+JOHOR
+BOGUE
+JUBE
+SUNUP
+PAST
+KILIJ
+PYIC
+FRISK
+BUNA
 Table-
-Y	A	V	S	B	G	P	S	B	E	
-E	P	D	F	R	F	O	G	R	T	
-I	S	H	A	A	O	O	P	W	A	
-E	W	M	Z	T	C	K	E	L	E	
-M	A	N	E	R	V	A	B	L	M	
-V	E	U	C	E	M	S	A	Y	K	
-S	A	W	N	N	E	Z	G	S	N	
-N	R	C	R	W	M	U	S	G	I	
-B	Y	H	P	A	K	T	E	N	K	
-R	T	F	E	D	N	Z	Z	Z	S	
+G	Y	D	P	I	H	C	X	Y	J	
+X	G	O	R	T	S	A	P	W	O	
+K	C	E	O	G	B	L	Z	O	H	
+J	I	F	Q	K	E	U	C	I	O	
+Y	Y	E	R	N	L	U	N	S	R	
+G	P	Y	B	I	E	S	G	A	Z	
+D	C	P	Y	U	S	P	O	O	S	
+S	R	H	F	Q	J	K	E	U	B	
+R	Y	Y	Y	P	U	N	U	S	D	
+J	O	J	I	L	I	K	V	N	R	
 Array-
-{"Y","A","V","S","B","G","P","S","B","E","E","P","D","F","R","F","O","G","R","T","I","S","H","A","A","O","O","P","W","A","E","W","M","Z","T","C","K","E","L","E","M","A","N","E","R","V","A","B","L","M","V","E","U","C","E","M","S","A","Y","K","S","A","W","N","N","E","Z","G","S","N","N","R","C","R","W","M","U","S","G","I","B","Y","H","P","A","K","T","E","N","K","R","T","F","E","D","N","Z","Z","Z","S",}
+{"G","Y","D","P","I","H","C","X","Y","J","X","G","O","R","T","S","A","P","W","O","K","C","E","O","G","B","L","Z","O","H","J","I","F","Q","K","E","U","C","I","O","Y","Y","E","R","N","L","U","N","S","R","G","P","Y","B","I","E","S","G","A","Z","D","C","P","Y","U","S","P","O","O","S","S","R","H","F","Q","J","K","E","U","B","R","Y","Y","Y","P","U","N","U","S","D","J","O","J","I","L","I","K","V","N","R",}
